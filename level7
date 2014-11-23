@@ -1,0 +1,8 @@
+from PIL import Image
+
+#open the image
+image = Image.open("oxygen.png")
+
+#get the pixel values
+for i in range(76):
+    print(image.getpixel(((8 * i) + 2 , 50)))
